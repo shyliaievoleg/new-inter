@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #192D4B;
+    color: #fff;
+}
+
+.container {
+    max-width: 1320px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/*************  Header  *************/
+.top-bar {
+    background-color: #192D4B;
+    color: white;
+    padding: 30px 0 24px;
+    border-bottom: 1px solid #fff;
+}
+
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address, .phone {
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.address svg, .phone svg {
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid #fff;
+    border-radius: 20px;
+}
+
+.search-container svg {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+#search {
+    background: transparent;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+}
+
+header {
+    background: #192D4B url('../images/header-bg.png') no-repeat center top/cover;
+    color: white;
+    padding: 0 0 1000px;
+    text-align: center;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.user {
+  color: white;
+}
+
+.user a {
+  color: white;
+}
+
+.language-selector {
+  margin-left: 64px;
+}
+
+.page-title {
+  text-align: left;
+}
+
+.page-title h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  font-size: 66px;
+  margin: 112px 0 50px;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+}
+
+.btn {
+  background: #E2F1FF;
+  color: #192D4B;
+  border-radius: 4px;
+  font-size: 20px;
+  border: none;
+  height: 53px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background: #14378F;
+  color: #fff;
+}
+
+
+/*************  Content  *************/
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.section-about {
+    padding: 130px 0;
+}
+
+.section-about p {
+    font-size: 26px;
+    line-height: 1.5;
+}
+
+.section-about p .highlight {
+  background: #E2F1FF;
+  padding: 4px 8px;
+  color: #192D4B;
+}
+
+.our-skills {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  margin: 150px 0 0;
+}
+
+.skill-item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.skill-item1 {
+  padding: 15px 0 0;
+}
+
+.skill-item2 {
+  padding: 140px 0 0;
+}
+
+.skill-item3 {
+  padding: 5px 0 0;
+}
+
+.skill-item4 {
+  padding: 110px 0 0;
+}
+
+.skill-item5 {
+  padding: 0;
+}
+
+.skill-item .icon {
+  margin: 0 0 24px;
+}
+.our-clients {
+  text-align: center;
+  padding: 130px 0;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 0 0 70px;
+}
+
+.clients-logos .logo {
+  max-width: 200px;
+}
+
+.clients-logos .logo img {
+  max-width: 100%;
+  max-height: 90px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #192D4B;
+    color: white;
+}
+.faq-item {
+    margin: 10px 0;
+}
+
+.accordion {
+    background-color: #192D4B;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion:hover {
+    background-color: #0056b3;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #4A5A7C;
+    display: none;
+    overflow: hidden;
+    border: 1px solid #192D4B;
+    border-top: none;
+}
+
+.icon {
+    font-size: 1.2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #192D4B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
