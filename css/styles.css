@@ -367,12 +367,149 @@ section {
   padding: 100px 0;
 }
 
+.section-news .container {
+  max-width: 1600px;
+}
+
 .section-news h2 {
   color: #192D4B;
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 60px;
+}
+
+.section-news .slider-container {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section-news .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.section-news .slide {
+    display: flex;
+    flex: 0 0 100%;
+    gap: 10px;
+}
+
+.section-news .news-item {
+    flex: 1;
+    margin: 0;
+    padding: 20px;
+    background: #ccc;
+    aspect-ratio: 412 / 400;
+    display: flex;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.section-news .news-item .image {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section-news .news-item .image img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.section-news .news-item .content {
+    display: block;
+    z-index: 1;
+}
+
+.section-news .news-item .date {
+    color: #D9D9D9;
+    font-size: 12px;
+    display: block;
+    margin: 0 0 10px;
+}
+
+.section-news .news-item h3 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 0 6px;
+}
+
+.section-news .news-item p {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 6px;
+}
+
+.section-news .news-item .btn {
+    width: auto;
+    padding: 12px 15px;
+    margin: 20px 0 0;
+}
+
+.section-news .navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.section-news .navigation button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 10px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.section-news .navigation button:hover {
+    background-color: #5C8BC1;
+}
+
+.section-news .navigation button:hover svg path {
+    fill: #fff;
+}
+
+.section-news .slide-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-news .dot {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #192D4B;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-news .dot:hover {
+    background-color: #5C8BC1;
+    color: white;
+}
+
+.section-news .dot.active {
+    background-color: #192D4B;
+    color: white;
 }
 
 .section-faq {
