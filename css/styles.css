@@ -33,6 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1600px;
 }
 
 .address, .phone {
@@ -56,15 +57,17 @@ body {
 .search-container svg {
     position: absolute;
     left: 10px;
-    top: 6px;
+    top: 10px;
 }
 
 #search {
     background: transparent;
-    padding: 5px 30px;
+    padding: 8px 30px;
     border: none;
     border-radius: 20px;
-    width: 200px;
+    width: 400px;
+    color: #fff;
+    font-size: 16px;
 }
 
 header {
@@ -75,10 +78,14 @@ header {
 }
 
 .header-nav {
+    padding: 15px 0;
+}
+
+.header-nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    max-width: 1600px;
 }
 
 nav ul {
@@ -90,11 +97,16 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block;
+    margin: 0 15px 5px;
+}
+
+nav ul li:first-child {
+    margin: 0 15px 0 0;
 }
 
 nav ul li a {
+    display: block;
     color: white;
     text-decoration: none;
     line-height: 1.5;
@@ -234,6 +246,10 @@ section {
   padding: 40px 0;
 }
 
+.our-clients .container {
+  max-width: 1600px;
+}
+
 .clients-logos {
   display: flex;
   justify-content: center;
@@ -257,6 +273,10 @@ section {
 
 .section-services {
   padding: 0 0 70px;
+}
+
+.section-services .container {
+  max-width: 1600px;
 }
 
 .section-services .map {
@@ -334,6 +354,10 @@ section {
 .section-founders {
   background: #4A5A7C;
   padding: 80px 0 40px;
+}
+
+.section-founders .container {
+  max-width: 1600px;
 }
 
 .section-founders p {
@@ -643,21 +667,14 @@ section {
   margin: 0;
 }
 
-/*************  Footer  *************/
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #192D4B;
-    color: white;
-}
-
 .section-contact {
   padding: 80px 0 0;
 }
 
 .section-contact .container {
   background:  url('../images/form-bg.png') no-repeat right bottom/contain;
-  padding: 0 0 80px;
+  padding: 0 20px 80px;
+  max-width: 1600px;
 }
 
 .section-contact h2 {
@@ -708,5 +725,83 @@ form input::placeholder, form textarea::placeholder {
 }
 
 form textarea {
-    height: 190px;
+    height: 196px;
+}
+
+/*************  Footer  *************/
+footer {
+    background: #4A5A7C;
+    padding: 20px 0;
+    color: white;
+}
+
+footer .container {
+    max-width: 1600px;
+}
+
+footer h4 {
+    font-size: 16px;
+    color: #fff;
+    margin: 30px 0 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .cols {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr 1fr 0.5fr 1fr;
+    gap: 50px;
+    background: url('../images/footer-bg.png') no-repeat -40px bottom;
+    background-size: 25%;
+    padding: 0 0 60px;
+}
+
+footer .cols p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 25px;
+}
+
+footer .social-media a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+footer .social-media img {
+    display: block;
+    width: 100%;
+}
+
+footer .copyrights {
+    margin: 50px 0 0;
+    padding: 10px 0;
+    background: url('../images/footer-logos.png') no-repeat center center/contain;
+    background-size: 40%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #95A1BB;
 }
