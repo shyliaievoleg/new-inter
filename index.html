@@ -446,20 +446,25 @@
           </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
+        <section id="contact" class="section-contact">
+          <div class="container">
+            <h2>Оставить заявку</h2>
+            <p>Используйте нашу контактную форму для всех инфорационных запросов или свяжитесь с нами напрямую, используя контактную информацию ниже.</p>
+            <form id="contact-form" class="contact-form">
+              <div class="col">
+                <input type="text" id="name" name="name" placeholder="Ваше Имя" required>
+                <input type="phone" id="phone" name="phone" placeholder="Телефон" required>
+                <input type="email" id="email" name="email" placeholder="Ваш email" required>
+                <input type="text" id="departure-point" name="departure-point" placeholder="Пункт погрузки" required>
+                <textarea id="message" name="message" placeholder="Информация о грузе (название, количество, объем, упаковка, вес нетто, вес брутто)" required></textarea>
+              </div>
+              <div class="col">
+                <input type="text" id="ready-date" name="ready-date" placeholder="Дата готовности" required>
+                <textarea id="special-requirements" name="special-requirements" placeholder="Особые требования" required></textarea>
+                <button type="submit" class="btn btn-dark">Оставить заявку</button>
+              </div>
             </form>
+          </div>
         </section>
     </main>
 

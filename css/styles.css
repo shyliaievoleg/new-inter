@@ -97,6 +97,12 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    line-height: 1.5;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .user {
@@ -141,6 +147,11 @@ nav ul li a {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 .btn-dark {
@@ -640,11 +651,42 @@ footer {
     color: white;
 }
 
+.section-contact {
+  padding: 80px 0 0;
+}
+
+.section-contact .container {
+  background:  url('../images/form-bg.png') no-repeat right bottom/contain;
+  padding: 0 0 80px;
+}
+
+.section-contact h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+.section-contact p {
+  color: #4C687F;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 0 30px;
+  width: 30%;
+}
+
 form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 60%;
+    margin: 0;
+}
+
+form .col {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
+    flex-flow: column wrap;
 }
 
 form label {
@@ -652,21 +694,19 @@ form label {
 }
 
 form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 15px 20px;
+    margin-bottom: 24px;
+    border: 1px solid #CAD1E1;
     border-radius: 5px;
+    background: none;
+    resize: none;
+    color: #E2F1FF;
+    font-size: 16px;
+}
+form input::placeholder, form textarea::placeholder {
+    color: #95A1BB;
 }
 
-form button {
-    padding: 10px;
-    background: #192D4B;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #0056b3;
+form textarea {
+    height: 190px;
 }
