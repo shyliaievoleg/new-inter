@@ -250,7 +250,7 @@ section {
 
 .section-services .map {
   background: #192D4B url('../images/map-bg.png') no-repeat center top/contain;
-  padding: 0 0 60%;
+  aspect-ratio: 16 / 9;
   max-width: 1720px;
   margin: 0 auto;
 }
