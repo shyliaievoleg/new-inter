@@ -772,7 +772,7 @@ footer .cols {
     grid-template-columns: 1fr 0.8fr 1fr 1fr 0.5fr 1fr;
     gap: 50px;
     background: url('../images/footer-bg.png') no-repeat -40px bottom;
-    background-size: 25%;
+    background-size: 20%;
     padding: 0 0 60px;
 }
 
